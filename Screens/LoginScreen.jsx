@@ -27,7 +27,7 @@ const LoginScreen = () => {
     backgroundColor: '#FFFFFF',
   };
 
-  const [inputFocusLogin, setInputFocusLogin] = useState({ ...normalStyle });
+  const [inputFocusMail, setInputFocusMail] = useState({ ...normalStyle });
   const [inputFocusPass, setInputFocusPass] = useState({ ...normalStyle });
 
   return (
@@ -42,12 +42,12 @@ const LoginScreen = () => {
 
               <TextInput
                 onFocus={() => {
-                  setInputFocusLogin({ ...focusStyle });
+                  setInputFocusMail({ ...focusStyle });
                 }}
                 onBlur={() => {
-                  setInputFocusLogin({ ...normalStyle });
+                  setInputFocusMail({ ...normalStyle });
                 }}
-                style={[styles.input, inputFocusLogin]}
+                style={[styles.input, inputFocusMail]}
                 placeholder="Адреса електронної пошти"
               />
 
@@ -75,6 +75,7 @@ const LoginScreen = () => {
                   </Text>
                 </TouchableOpacity>
               </View>
+              
             </View>
           </ImageBackground>
         </View>

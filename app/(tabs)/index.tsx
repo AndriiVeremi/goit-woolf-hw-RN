@@ -2,9 +2,8 @@ import React from 'react';
 import { useFonts } from "expo-font";
 import { View } from 'react-native';
 
-import LoginScreen from '../../Screens/LoginScreen';
-
-// import RegistrationScreen from '../../Screens/RegistrationScreen';
+// import LoginScreen from '../../Screens/LoginScreen';
+import RegistrationScreen from '../../Screens/RegistrationScreen';
 // import PostsScreen from '../../Screens/PostsScreen';
 
 export default function HomeScreen() {
@@ -21,7 +20,8 @@ export default function HomeScreen() {
 
   return (
     <View>
-      <LoginScreen />
+      {/* <LoginScreen /> */}
+      <RegistrationScreen />
     </View>
   );
 }
